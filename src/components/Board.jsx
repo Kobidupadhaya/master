@@ -1,6 +1,9 @@
-import Square from './square';
-const Board = ({squares, handleSquareClick }) => {
-   const renderSquare = position => {
+/* eslint-disable react/prop-types */
+import Square from "./Square";
+
+
+const Board = ({ squares, handleSquareClick }) => {
+  const renderSquare = (position) => {
     return (
       <Square
         value={squares[position]}
@@ -9,7 +12,7 @@ const Board = ({squares, handleSquareClick }) => {
     );
   };
 
-  return (
+ return (
     <div className="board">
       
       <div className="board-row">
